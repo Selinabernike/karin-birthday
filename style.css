@@ -1,0 +1,61 @@
+body {
+    background-image: url('https://example.com/your-cake-background.jpg');
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.birthday-message {
+    font-size: 2.5em;
+    margin: 20px 0;
+    animation: fadeIn 2s;
+}
+
+.slides {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.last-slide .love {
+    animation: heartBeat 1s infinite;
+}
+
+.nav-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.7);
+    border: none;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes heartBeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
